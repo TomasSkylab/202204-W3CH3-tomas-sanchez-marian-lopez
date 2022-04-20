@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const series = [
   {
     id: 1,
