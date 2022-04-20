@@ -1,4 +1,4 @@
-import MainBoxComponent from "./components/MainBoxComponent/MainBoxComponent.js";
+import MainBoxComponent from "./components/mainBoxComponent/MainBoxComponent.js";
 
 const mainBox = document.querySelector(".main-container");
 
