@@ -15,6 +15,7 @@ class RatingComponent extends Component {
         movie.score >= i ? "icon--score fas fa-star" : "icon-score far fa-star";
       icon.title = `${i}/5`;
       icon.addEventListener("click", () => {
+        // eslint-disable-next-line no-param-reassign
         movie.score = i;
         icon.className =
           movie.score >= i
