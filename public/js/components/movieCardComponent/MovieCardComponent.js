@@ -1,5 +1,4 @@
 import Component from "../Component.js";
-import series from "../../series.js";
 
 class MovieCardComponent extends Component {
   movie;
