@@ -3,3 +3,4 @@
 - Card
 - Pending
 - Stars (button)
+- Main box
