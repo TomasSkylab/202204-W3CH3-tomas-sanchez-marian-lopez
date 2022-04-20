@@ -16,6 +16,7 @@ module.exports = {
     "always",
     { exceptAfterSingleLine: true },
   ],
+  "Import/extension": "off",
   babel: {
     env: {
       test: {
