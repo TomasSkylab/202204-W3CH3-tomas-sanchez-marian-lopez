@@ -1,17 +1,19 @@
 import Component from "../Component.js";
+import series from "../../series.js";
 
 class MovieCardComponent extends Component {
-  constructor(parentElement) {
+  movie;
+  constructor(parentElement, movie) {
     super("li", "serie", parentElement);
+    this.movie = movie;
     this.element.innerHTML = `
-    
                 <img
                   class="serie__poster"
-                  src="https://m.media-amazon.com/images/M/MV5BZGJjYzhjYTYtMDBjYy00OWU1LTg5OTYtNmYwOTZmZjE3ZDdhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
-                  alt="The Sopranos poster"
+                  src="${movie.poster}"
+                  alt="${movie.name} poster"
                 />
-                <h4 class="serie__title">The Sopranos</h4>
-                <p class="serie__info">David Chase (1999)</p>
+                <h4 class="serie__title">${movie.name}</h4>
+                <p class="serie__info">${movie.creator} (${movie.year})</p>
                 <ul class="score">
                   <li class="score__star">
                     <i class="icon--score fas fa-star" title="1/5"></i>

@@ -30,17 +30,16 @@ class MainBoxComponent extends Component {
         </section>
       </main>
     `;
-
     series.forEach((movie) => {
       if (!movie.watched) {
         const pendingSeries = document.querySelector(".series-list");
-        new MovieCardComponent(pendingSeries);
+        new MovieCardComponent(pendingSeries, movie);
       }
       if (movie.watched) {
         const watchedSeries = document.querySelector(
           ".series-list.series-list--watched"
         );
-        new MovieCardComponent(watchedSeries);
+        new MovieCardComponent(watchedSeries, movie);
       }
     });
   }
