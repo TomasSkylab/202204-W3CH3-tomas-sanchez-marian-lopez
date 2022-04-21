@@ -1,5 +1,5 @@
 /* eslint-disable no-new */
-import RatingComponent from "../../ratingComponent/RatingComponent.js";
+import RatingComponent from "../RatingComponent/RatingComponent.js";
 import Component from "../Component.js";
 
 class MovieCardComponent extends Component {

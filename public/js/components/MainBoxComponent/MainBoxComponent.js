@@ -1,7 +1,7 @@
 /* eslint-disable no-new */
 import series from "../../series.js";
 import Component from "../Component.js";
-import MovieCardComponent from "../movieCardComponent/MovieCardComponent.js";
+import MovieCardComponent from "../MovieComponent/MovieComponent.js";
 
 class MainBoxComponent extends Component {
   constructor(parentElement) {
