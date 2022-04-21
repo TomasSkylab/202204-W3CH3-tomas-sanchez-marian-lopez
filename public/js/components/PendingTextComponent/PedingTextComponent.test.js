@@ -1,3 +1,4 @@
+/* eslint-disable no-new */
 import PendingTextComponent from "./PendingTextComponent.js";
 
 describe("Given a PendingTextComponent component", () => {
