@@ -2,6 +2,7 @@
 import series from "../../series.js";
 import Component from "../Component.js";
 import MovieCardComponent from "../MovieComponent/MovieComponent.js";
+import PendingTextComponent from "../PendingTextComponent/PendingTextComponent.js";
 
 class MainBoxComponent extends Component {
   constructor(parentElement) {
@@ -15,7 +16,6 @@ class MainBoxComponent extends Component {
           <h2 class="section-title">Series list</h2>
           <section class="series-pending">
             <h3 class="subsection-title">Pending series</h3>
-            <p class="info">You have 4 series pending to watch</p>
             <!--<p class="info">Congrats! You've watched all your series</p>-->
             <ul class="series-list">
             </ul>
@@ -30,6 +30,13 @@ class MainBoxComponent extends Component {
         </section>
       </main>
     `;
+    const pendingToWatch = document.querySelector(".series-pending");
+
+    new PendingTextComponent(
+      pendingToWatch,
+      "info",
+      "You have 4 series pending to watch"
+    );
     series.forEach((movie) => {
       if (!movie.watched) {
         const pendingSeries = document.querySelector(".series-list");

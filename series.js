@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const series = [
   {
     id: 1,
@@ -53,5 +54,3 @@ const series = [
     emmies: 0,
   },
 ];
-
-export default series;
