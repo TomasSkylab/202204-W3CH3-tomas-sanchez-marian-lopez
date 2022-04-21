@@ -3,9 +3,9 @@ import Component from "../Component.js";
 class PendingTextComponent extends Component {
   text;
 
-  constructor(parentElement, className, textContent) {
+  constructor(parentElement, className, text) {
     super("p", className, parentElement);
-    this.text = textContent;
+    this.element.textContent = text;
   }
 }
 
